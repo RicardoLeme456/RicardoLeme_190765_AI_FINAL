@@ -2464,6 +2464,22 @@ MonoBehaviour:
   prefab: {fileID: 854148008}
   playerDown: {fileID: 854148011}
   respawnPoint: {fileID: 323971813}
+--- !u!54 &854148010
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854148008}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &854148011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: f522d7a6ae22b4349bb8a2aa6cfb6bff,
@@ -2705,8 +2721,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 232, y: -40.67389}
-  m_SizeDelta: {x: 409.69623, y: 81.34778}
+  m_AnchoredPosition: {x: 98.7, y: -15.1}
+  m_SizeDelta: {x: 143.07617, y: 30.228455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &975816777
 MonoBehaviour:

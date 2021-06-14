@@ -1,3 +1,5 @@
 tree("Root")
 	sequence
 		Follow
+		IsHealthLessThan(0.1)
+		Explode

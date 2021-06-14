@@ -81,7 +81,7 @@ public class Drive : MonoBehaviour {
             }*/
 
             TakeDamage(2f);
-         }
+        }
      }
 
     public void TakeDamage(float amnt)
