@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RobotGuard.unity
+    guid: 78ea215c5b69c4a06ab1d7069a8e51f6
+  m_configObjects: {}
