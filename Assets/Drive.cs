@@ -17,8 +17,7 @@ public class Drive : MonoBehaviour {
     /*public Slider healthBar;
     float health = 100.0f;*/
     public GameManager manager;
-    public Slider healthBar;
-    public float health = 100f;
+    public float health = 100;
 
     [Header("Collider")]
     float translationMovementValue;
@@ -43,9 +42,7 @@ public class Drive : MonoBehaviour {
         healthBar.value = (int)health;
         healthBar.transform.position = healthBarPos + new Vector3(0, 60, 0);*/
 
-        healthBar.maxValue = health;
-        healthBar.value = health;
-
+        
         float translation = Input.GetAxis("Vertical") * speed;
         float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
         translation *= Time.deltaTime;
@@ -92,7 +89,7 @@ public class Drive : MonoBehaviour {
             manager.GameOver();
         }
         float _h = Mathf.Clamp(health, 0, 100f);
-        healthBar.value = _h;
+        
     }
 
     void CheckMovement()

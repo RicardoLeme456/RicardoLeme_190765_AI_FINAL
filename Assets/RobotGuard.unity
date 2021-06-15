@@ -2457,7 +2457,6 @@ MonoBehaviour:
     type: 3}
   bulletSpawn: {fileID: 2016039034}
   manager: {fileID: 847137173}
-  healthBar: {fileID: 975816777}
   health: 100
   player: {fileID: 854148008}
   playerCol: {fileID: 854148011}
@@ -2476,9 +2475,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!4 &854148011 stripped
 Transform:
@@ -3185,6 +3184,7 @@ GameObject:
   - component: {fileID: 1042036980}
   - component: {fileID: 1042036979}
   - component: {fileID: 1042036978}
+  - component: {fileID: 1042036981}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3273,6 +3273,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1042036981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042036976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36566dc1bf5afe419a86891a788d395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Barra: {fileID: 854148009}
+  vida: 0
+  MaxLife: 100
+  balaBar: {fileID: 1151245817}
 --- !u!1 &1054562228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,11 +3511,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f292395dd23b5704b8afa74f7318d16b, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
